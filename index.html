@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+    <meta name="renderer" content="webkit">
+    <meta name="force-rendering" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="stylesheet" href="https://unpkg.com/mdui@1.0.2/dist/css/mdui.min.css">
+    <link rel="icon" href="src/favicon.ico" sizes="any">
+    <link rel="apple-touch-icon" href="src/apple-touch-icon.png">
+    <title>书签有效性检测</title>
+</head>
+
+<body
+    class="mdui-appbar-with-toolbar mdui-theme-primary-indigo mdui-theme-accent-pink mdui-theme-layout-auto mdui-loaded">
+    <header class="appbar mdui-appbar mdui-appbar-fixed">
+        <div class="mdui-toolbar mdui-color-theme">
+            <a class="mdui-typo-headline mdui-hidden-xs">书签有效性检测</a>
+            <div class="mdui-toolbar-spacer"></div>
+            <a href="settings.html" class="mdui-btn mdui-btn-icon mdui-ripple mdui-ripple-white"
+                mdui-tooltip="{content: '设置'}">
+                <i class="mdui-icon material-icons">&#xe8b8;</i>
+            </a>
+        </div>
+    </header>
+    <div class="mdui-container">
+        <form onsubmit="getfile();">
+            <input type="file" accept="text/html"></input>
+            <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-theme-accent" type="submit">Button</button>
+        </form>
+    </div>
+    <script src="https://unpkg.com/mdui@1.0.2/dist/js/mdui.min.js"></script>
+    <script src="src/index.js"></script>
+</body>
+
+</html>
